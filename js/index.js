@@ -5,16 +5,17 @@ function resizingByCanvas() {
     height = window.innerHeight;
     width = window.innerWidth;
 
-    //console.log( width, height);
+    console.log( width, height);
 }
 
 resizingByCanvas();
 
 function randomPosition() {
-    let posX = Math.floor(Math.random() * width);
-    let posY = Math.floor(Math.random() * height);
+    let posX = Math.floor(Math.random() * width)- 90;
+    let posY = Math.floor(Math.random() * height) - 90;
 
-    //console.log (posX, posY);
+    posX = posX < 0 ? 0 :posX
+    posY = posY < 0 ? 0 :posY
 
     const pigeon = document.createElement('img');
     pigeon.src = './Img/pombo.png';
@@ -22,8 +23,9 @@ function randomPosition() {
     pigeon.style.left = posX + 'px';
     pigeon.style.top = posY + 'px';
     pigeon.style.position = ("absolute")
-
-
+    
+    
     document.body.appendChild(pigeon);
-
+    
+    console.log (posX, posY);
 }
