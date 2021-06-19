@@ -1,11 +1,16 @@
-const height = 0;
-const width = 0;
+let height = 0;
+let width = 0;
 
 function resizingByCanvas () {
-    const height = window.innerHeight;
-    const width = window.innerWidth;
+    height = window.innerHeight;
+    width = window.innerWidth;
     
-    console.log( height, width);
+    console.log( width, height);
 }
 
 resizingByCanvas();
+
+const posX = Math.floor(Math.random() * width);
+const posY = Math.floor(Math.random() * height);
+
+console.log (posX, posY);
