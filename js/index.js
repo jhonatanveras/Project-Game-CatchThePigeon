@@ -23,14 +23,14 @@ function randomPosition() {
     // cria elemento html
     const pigeon = document.createElement('img');
     pigeon.src = './Img/pombo.png';
-    pigeon.className = randomSize();
+    pigeon.className = randomSize() + ' ' + randomSide();
     pigeon.style.left = posX + 'px';
     pigeon.style.top = posY + 'px';
     pigeon.style.position = ("absolute")
 
 
     document.body.appendChild(pigeon);
-    randomSize();
+
 }
 
 function randomSize() {
@@ -45,7 +45,19 @@ function randomSize() {
 
         case 2:
             return 'mainPigeon2';     
-                
+
     }
 }
 
+function randomSide() {
+    let classe = Math.floor(Math.random() * 2);
+    
+    switch(classe){
+        case 0:
+            return 'rightSide';
+
+        case 1:
+            return 'leftSide';    
+
+    }
+}
