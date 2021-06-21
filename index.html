@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catch The Pigeon</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src ="./js/index.js"> </script>
-</head>
-<body onresize="resizingByCanvas()" >
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body onresize="resizingByCanvas()">
+    <div id="scenario">
+      <div class="panel">
+        <div class="life">
+          <img src="./Img/coracao_vazio.png" alt="coracão" />
+          <img src="./Img/coracao_cheio.png" alt="coracão" />
+          <img src="./Img/coracao_cheio.png" alt="coracão" />
+        </div>
 
-    
-     <script>
-        setInterval (function() {
-            randomPosition()
-        }, 1000)
-     </script>
-</body>
+        <div class="timer">Temaining time: ?</div>
+      </div>
+    </div>
+
+    <script>
+      setInterval(function () {
+        randomPosition();
+      }, 1000);
+    </script>
+  </body>
 </html>

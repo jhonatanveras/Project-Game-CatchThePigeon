@@ -1,8 +1,9 @@
 let height = 0;
 let width = 0;
 
-    //tamanho do browser
+//tamanho do browser
 function resizingByCanvas() {
+    
     height = window.innerHeight;
     width = window.innerWidth;
 
@@ -11,14 +12,14 @@ function resizingByCanvas() {
 
 resizingByCanvas();
 
-    //cria posição aleatória 
+//cria posição aleatória 
 function randomPosition() {
 
     //remove o pombo anterior (caso exista)
     if (document.getElementById('pigeon')) {
         document.getElementById('pigeon').remove();
     }
-    
+
     let posX = Math.floor(Math.random() * width) - 90;
     let posY = Math.floor(Math.random() * height) - 90;
 
@@ -41,7 +42,7 @@ function randomPosition() {
 
 }
 
-    //cria tamanhos aleatórios 
+//cria tamanhos aleatórios 
 function randomSize() {
     let classe = Math.floor(Math.random() * 3);
 
@@ -58,7 +59,7 @@ function randomSize() {
     }
 }
 
-    //cria lados aleatórios (direita lado A, esquerda lado B)
+//cria lados aleatórios (direita lado A, esquerda lado B)
 function randomSide() {
     let classe = Math.floor(Math.random() * 2);
 
@@ -71,8 +72,3 @@ function randomSide() {
 
     }
 }
-
-
-
-
-
