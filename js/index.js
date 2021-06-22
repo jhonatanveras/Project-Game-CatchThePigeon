@@ -2,6 +2,7 @@
 let scenario = document.getElementById('scenario');
 let height = scenario.offsetHeight;
 let width = scenario.offsetWidth;
+let lives = 1;
 
 //cria posição aleatória 
 function randomPosition() {
@@ -9,6 +10,13 @@ function randomPosition() {
     //remove o pombo anterior (caso exista)
     if (document.getElementById('pigeon')) {
         document.getElementById('pigeon').remove();
+
+        if(lives > 3) {
+            alert('game over');
+        }else
+        document.getElementById("life" + lives).src="/Img/coracao_vazio.png";
+
+        lives++;
     }
 
     let posX = Math.floor(Math.random() * ((width*0.8) - (width*0.1) + 1) + (width*0.1));
@@ -25,6 +33,9 @@ function randomPosition() {
     pigeon.style.top = posY + 'px';
     pigeon.style.position = ("relative");
     pigeon.id = 'pigeon';
+    pigeon.onclick = function() {
+        this.remove();
+    }
 
 
     scenario.appendChild(pigeon);
