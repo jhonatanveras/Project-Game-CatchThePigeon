@@ -3,6 +3,7 @@ let scenario = document.getElementById('scenario');
 let height = scenario.offsetHeight;
 let width = scenario.offsetWidth;
 let lives = 1;
+let time = 10;
 
 //cria posição aleatória 
 function randomPosition() {
@@ -72,3 +73,20 @@ function randomSide() {
 
     }
 }
+let pigeonBreeder = setInterval(function () {
+    randomPosition();
+  }, 2000);
+
+let chronometer = setInterval(function(){
+    
+    time -= 1;
+    
+    if(time < 0) {
+        clearInterval(chronometer);
+        clearInterval (pigeonBreeder);
+        alert('vitoria');
+    }else {
+        document.getElementById('chronometer').innerHTML = time;
+    }
+}, 1000);
+
