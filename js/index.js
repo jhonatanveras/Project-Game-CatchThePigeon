@@ -11,8 +11,8 @@ function randomPosition() {
     if (document.getElementById('pigeon')) {
         document.getElementById('pigeon').remove();
 
-        if(lives > 3) {
-            alert('game over');
+        if(lives > 4) {
+            window.location.href='game_over.html';
         }else
         document.getElementById("life" + lives).src="/Img/coracao_vazio.png";
 
