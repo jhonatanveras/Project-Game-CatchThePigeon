@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catch The Pigeon</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./js/index.js"></script>
   </head>
-  <body onresize="resizingByCanvas()">
+  <body>
     <div id="scenario">
       <div class="panel">
         <div class="life">
@@ -16,11 +15,12 @@
           <img src="./Img/coracao_cheio.png" alt="coracão" />
           <img src="./Img/coracao_cheio.png" alt="coracão" />
         </div>
-
+        
         <div class="timer">Temaining time: ?</div>
       </div>
     </div>
-
+    
+    <script src="./js/index.js"></script>
     <script>
       setInterval(function () {
         randomPosition();

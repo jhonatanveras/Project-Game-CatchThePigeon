@@ -6,6 +6,7 @@ body {
 }
 
 #scenario {
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background: url('../Img/bg6.png');
@@ -14,18 +15,18 @@ body {
 }
 
 .mainPigeon {
-    width: 50px;
-    height: 50px;
-}
-
-.mainPigeon1 {
     width: 65px;
     height: 65px;
 }
 
+.mainPigeon1 {
+    width: 80px;
+    height: 80px;
+}
+
 .mainPigeon2 {
-    width: 85px;
-    height: 85px;
+    width: 95px;
+    height: 95px;
 }
 
 .rightSide {

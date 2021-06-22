@@ -1,16 +1,7 @@
-let height = 0;
-let width = 0;
-
-//tamanho do browser
-function resizingByCanvas() {
-    
-    height = window.innerHeight;
-    width = window.innerWidth;
-
-    console.log(width, height);
-}
-
-resizingByCanvas();
+//tamanho do cenario
+let scenario = document.getElementById('scenario');
+let height = scenario.offsetHeight;
+let width = scenario.offsetWidth;
 
 //cria posição aleatória 
 function randomPosition() {
@@ -20,13 +11,11 @@ function randomPosition() {
         document.getElementById('pigeon').remove();
     }
 
-    let posX = Math.floor(Math.random() * width) - 90;
+    let posX = Math.floor(Math.random() * ((width*0.8) - (width*0.1) + 1) + (width*0.1));
     let posY = Math.floor(Math.random() * height) - 90;
 
     posX = posX < 0 ? 0 : posX;
     posY = posY < 0 ? 0 : posY;
-
-    console.log(posX, posY);
 
     // cria elemento html
     const pigeon = document.createElement('img');
@@ -34,11 +23,11 @@ function randomPosition() {
     pigeon.className = randomSize() + ' ' + randomSide();
     pigeon.style.left = posX + 'px';
     pigeon.style.top = posY + 'px';
-    pigeon.style.position = ("absolute");
+    pigeon.style.position = ("relative");
     pigeon.id = 'pigeon';
 
 
-    document.body.appendChild(pigeon);
+    scenario.appendChild(pigeon);
 
 }
 
