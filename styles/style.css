@@ -14,6 +14,15 @@ body {
     background-position: center;
 }
 
+#scenatioGame {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url('../Img/bg4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .mainPigeon {
     width: 65px;
     height: 65px;
@@ -64,7 +73,7 @@ body {
     font-weight: bold;
 }
 
-.panelScore{
+.panelScore {
     float: left;
     font-size: 20px;
     font-weight: bold;
@@ -73,6 +82,5 @@ body {
     bottom: 0px;
     left: 0px;
     border-top: solid 1px #ff6400;
-    background-color:#ff6400;
+    background-color: #ff6400;
 }
-

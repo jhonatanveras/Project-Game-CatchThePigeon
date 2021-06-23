@@ -13,16 +13,16 @@ function randomPosition() {
     if (document.getElementById('pigeon')) {
         document.getElementById('pigeon').remove();
 
-        if(lives > 3) {
-            window.location.href='game_over.html';
-        }else {
-            document.getElementById("life" + lives).src="/Img/coracao_vazio.png";
+        if (lives > 3) {
+            window.location.href = 'game_over.html';
+        } else {
+            document.getElementById("life" + lives).src = "/Img/coracao_vazio.png";
         }
-        
+
         lives++;
     }
 
-    let posX = Math.floor(Math.random() * ((width*0.8) - (width*0.1) + 1) + (width*0.1));
+    let posX = Math.floor(Math.random() * ((width * 0.8) - (width * 0.1) + 1) + (width * 0.1));
     let posY = Math.floor(Math.random() * height) - 90;
 
     posX = posX < 0 ? 0 : posX;
@@ -36,7 +36,7 @@ function randomPosition() {
     pigeon.style.top = posY + 'px';
     pigeon.style.position = ("relative");
     pigeon.id = 'pigeon';
-    pigeon.onclick = function() {
+    pigeon.onclick = function () {
         this.remove();
     }
 
@@ -77,18 +77,25 @@ function randomSide() {
 }
 let pigeonBreeder = setInterval(function () {
     randomPosition();
-  }, 2000);
+}, 2000);
 
-let chronometer = setInterval(function(){
-    
+let chronometer = setInterval(function () {
+
     time -= 1;
-    
-    if(time < 0) {
+
+    if (time < 0) {
         clearInterval(chronometer);
-        clearInterval (pigeonBreeder);
-        window.location.href='victory _congratulations.html';
-    }else {
+        clearInterval(pigeonBreeder);
+        window.location.href = 'victory _congratulations.html';
+    } else {
         document.getElementById('chronometer').innerHTML = time;
-}
+    }
 }, 1000);
 
+function gameStart() {
+    let level = document.getElementById('level').value;
+
+    if(level === '') {
+        alert('Select a level to start the game');
+    }
+}
