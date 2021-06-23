@@ -4,6 +4,7 @@ let height = scenario.offsetHeight;
 let width = scenario.offsetWidth;
 let lives = 1;
 let time = 10;
+let score = 0;
 
 //cria posição aleatória 
 function randomPosition() {
@@ -12,11 +13,12 @@ function randomPosition() {
     if (document.getElementById('pigeon')) {
         document.getElementById('pigeon').remove();
 
-        if(lives > 4) {
+        if(lives > 3) {
             window.location.href='game_over.html';
-        }else
-        document.getElementById("life" + lives).src="/Img/coracao_vazio.png";
-
+        }else {
+            document.getElementById("life" + lives).src="/Img/coracao_vazio.png";
+        }
+        
         lives++;
     }
 
@@ -28,7 +30,7 @@ function randomPosition() {
 
     // cria elemento html
     const pigeon = document.createElement('img');
-    pigeon.src = './Img/pombo.png';
+    pigeon.src = '../Img/pombo.png';
     pigeon.className = randomSize() + ' ' + randomSide();
     pigeon.style.left = posX + 'px';
     pigeon.style.top = posY + 'px';
@@ -84,9 +86,9 @@ let chronometer = setInterval(function(){
     if(time < 0) {
         clearInterval(chronometer);
         clearInterval (pigeonBreeder);
-        alert('vitoria');
+        window.location.href='victory _congratulations.html';
     }else {
         document.getElementById('chronometer').innerHTML = time;
-    }
+}
 }, 1000);
 

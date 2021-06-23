@@ -57,3 +57,22 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+.score {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.panelScore{
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    width: 190px;
+    padding: 10px;
+    bottom: 0px;
+    left: 0px;
+    border-top: solid 1px #ff6400;
+    background-color:#ff6400;
+}
+
