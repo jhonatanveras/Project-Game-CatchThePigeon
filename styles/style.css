@@ -1,3 +1,7 @@
+html {
+    cursor: url("../Img/rede.png")30 30,auto;
+}
+
 body {
     margin: 0;
     background-image: url('../Img/fundo2.jpg');
@@ -9,7 +13,7 @@ body {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    background: url('../Img/bg6.png');
+    background: url('../Img/bg8.png');
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -24,18 +28,18 @@ body {
 }
 
 .mainPigeon {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
 }
 
 .mainPigeon1 {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
 .mainPigeon2 {
-    width: 95px;
-    height: 95px;
+    width: 90px;
+    height: 90px;
 }
 
 .rightSide {
