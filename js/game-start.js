@@ -3,7 +3,7 @@ let scenario = document.getElementById('scenario');
 let height = scenario.offsetHeight;
 let width = scenario.offsetWidth;
 let lives = 1;
-let time = 15;
+let time = 17;
 let score = 0;
 let pigeonBreederTime = 1500;
 
@@ -28,13 +28,13 @@ function randomPosition() {
     if (lives > 3) {
       window.location.href = '/start-code/game_over.html';
     } else {
-      document.getElementById("life" + lives).src = "/Img/coracao_vazio.png";
+      document.getElementById("life" + lives).src = "../Img/medalha_vazia.png";
     }
 
     lives++;
   }
 
-  let posX = Math.floor(Math.random() * ((width * 0.8) - (width * 0.1) + 1) + (width * 0.1));
+  let posX = Math.floor(Math.random() * ((width * 0.9) - (width * 0.1) + 1) + (width * 0.1));
   let posY = Math.floor(Math.random() * height) - 90;
 
   posX = posX < 0 ? 0 : posX;
@@ -50,7 +50,7 @@ function randomPosition() {
   pigeon.id = 'pigeon';
   pigeon.onclick = function () {
     this.remove();
-    score += 2;
+    score += 1;
     updateScore();
   };
 
@@ -106,6 +106,7 @@ let chronometer = setInterval(function () {
     clearInterval(chronometer);
     clearInterval(pigeonBreeder);
     window.location.href = '/start-code/victory_congratulations.html';
+    console.log(document)
   } else {
     document.getElementById('chronometer').innerHTML = time;
   }
