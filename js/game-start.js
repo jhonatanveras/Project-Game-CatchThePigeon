@@ -6,6 +6,7 @@ let lives = 1;
 let time = 17;
 let score = 0;
 let pigeonBreederTime = 1500;
+localStorage.setItem("score", score);
 
 let level = window.location.search;
 level = level.replace('?', '');
@@ -13,9 +14,9 @@ level = level.replace('?', '');
 if (level === 'medium') {
   pigeonBreederTime = 1500;
 } else if (level === 'hard') {
-  pigeonBreederTime = 1150;
+  pigeonBreederTime = 1050;
 } else if (level === 'ironhack') {
-  pigeonBreederTime = 950;
+  pigeonBreederTime = 850;
 }
 
 //cria posição aleatória 
@@ -60,6 +61,7 @@ function randomPosition() {
 }
 
 function updateScore() {
+  localStorage.setItem("score", score);
   document.getElementById('scores').innerHTML = score;
 
 }
@@ -106,7 +108,6 @@ let chronometer = setInterval(function () {
     clearInterval(chronometer);
     clearInterval(pigeonBreeder);
     window.location.href = '/start-code/victory_congratulations.html';
-    console.log(document)
   } else {
     document.getElementById('chronometer').innerHTML = time;
   }
