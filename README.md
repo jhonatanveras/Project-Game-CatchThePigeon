@@ -1,6 +1,6 @@
 # **Catch The Pigeon**
 
-(Projeto Modulo 1 Ironhack)
+(Project Module 1 Ironhack)
 
  ![Start Screen](./Img/Telainicial.png)
 
