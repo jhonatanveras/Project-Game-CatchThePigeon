@@ -27,7 +27,7 @@ function randomPosition() {
     document.getElementById('pigeon').remove();
 
     if (lives > 3) {
-      window.location.href = '/game_over.html';
+      window.location.href = './game_over.html';
     } else {
       document.getElementById("life" + lives).src = "../Img/medalha_vazia.png";
     }
@@ -107,7 +107,7 @@ let chronometer = setInterval(function () {
   if (time < 0) {
     clearInterval(chronometer);
     clearInterval(pigeonBreeder);
-    window.location.href = '/victory_congratulations.html';
+    window.location.href = './victory_congratulations.html';
   } else {
     document.getElementById('chronometer').innerHTML = time;
   }

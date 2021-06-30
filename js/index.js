@@ -4,7 +4,7 @@ function gameStart() {
         alert('Select a level to start the game');
         return false;
     }
-    window.location.href = '/Project-Game-CatchThePigeon/game_started.html?' + level;
+    window.location.href = './Project-Game-CatchThePigeon/game_started.html?' + level;
 }
 
 document.getElementById('letPlay').addEventListener("click", function(){
