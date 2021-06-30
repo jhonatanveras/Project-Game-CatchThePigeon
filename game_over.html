@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game over</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <audio src="./midia/RisadadoMutley.mp3" autoplay preload=""></audio>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <audio src="/midia/RisadadoMutley.mp3" autoplay preload=""></audio>
+  </head>
+  <body>
     <div id="scenatioGame">
-
-        <div class="container">
-            <div class=" row">
-                <div class="col">
-                    <div class="d-flex justify-content-center">                        
-                        <img class="gameOver" src="./Img/game_over1.png" alt="Game over">
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <img class="gameOver" src="/Img/game_over1.png" alt="Game over" />
             </div>
-
-            <div class=" row">
-                <div class="col">
-                    <div class="d-flex flex-column d-flex align-items-center justify-content-center">                        
-                        <button type="button" class="btn btn-dark btn-gl"onclick="window.location.href = '../index.html' ">Restart</button><br>
-                        <div class="panelScore">score : <span id="scores"></span> </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        
+
+        <div class="row">
+          <div class="col">
+            <div
+              class="
+                d-flex
+                flex-column
+                d-flex
+                align-items-center
+                justify-content-center
+              "
+            >
+              <button
+                type="button"
+                class="btn btn-dark btn-gl"
+                onclick="window.location.href = '/index.html' "
+              >
+                Restart</button
+              ><br />
+              <div class="panelScore">score : <span id="scores"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="./js/score_gamer.js"></script>
-</body>
+    <script src="/js/score_gamer.js"></script>
+  </body>
 </html>
