@@ -14,9 +14,9 @@ level = level.replace('?', '');
 if (level === 'medium') {
   pigeonBreederTime = 1500;
 } else if (level === 'hard') {
-  pigeonBreederTime = 1050;
+  pigeonBreederTime = 1150;
 } else if (level === 'ironhack') {
-  pigeonBreederTime = 850;
+  pigeonBreederTime = 900;
 }
 
 //cria posição aleatória 
