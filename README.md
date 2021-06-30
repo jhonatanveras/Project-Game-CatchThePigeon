@@ -4,7 +4,7 @@
 
  ![Start Screen](./Img/Telainicial.png)
 
- Click [HERE](https://d-kunrath.github.io/project-ironhack-game/) to play **Catch The Pigeon**
+ Click [HERE](https://jhonatanveras.github.io/Project-Game-CatchThePigeon/) to play **Catch The Pigeon**
 
 ### Introduction
 
