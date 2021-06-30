@@ -1,6 +1,6 @@
 # **Catch The Pigeon**
 
-(Projecto Modulo 1 Ironhack)
+(Project Module 1 Ironhack)
 
  ![Start Screen](./Img/Telainicial.png)
 
@@ -48,4 +48,4 @@ The teachers **Daniel K Albanez (DK)**, **Gabriel Sicuto** and **Júlia Foresti*
 Thank you very much for this first module 🤓.
 
 ---
-**Developer:** ⌨️ com ❤️ por [Jhonatan Veras](https://github.com/jhonatanveras) 😊
+**Developer:** ⌨️ with ❤️ by [Jhonatan Veras](https://github.com/jhonatanveras) 😊
