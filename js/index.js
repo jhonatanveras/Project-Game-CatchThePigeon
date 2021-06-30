@@ -4,10 +4,10 @@ function gameStart() {
         alert('Select a level to start the game');
         return false;
     }
-    window.location.href = './start-code/game_started.html?' + level;
+    window.location.href = './game_started.html?' + level;
 }
 
 document.getElementById('letPlay').addEventListener("click", function(){
     document.getElementById('accordionExample').hidden = true;
     document.getElementById('scenatioGame').hidden = false;
-});
+}); 
