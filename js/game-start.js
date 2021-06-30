@@ -29,7 +29,7 @@ function randomPosition() {
     if (lives > 3) {
       window.location.href = './game_over.html';
     } else {
-      document.getElementById("life" + lives).src = "../Img/medalha_vazia.png";
+      document.getElementById("life" + lives).src = "./Img/medalha_vazia.png";
     }
 
     lives++;
@@ -43,7 +43,7 @@ function randomPosition() {
 
   // cria elemento html
   const pigeon = document.createElement('img');
-  pigeon.src = '../Img/pombo.png';
+  pigeon.src = './Img/pombo.png';
   pigeon.className = randomSize() + ' ' + randomSide();
   pigeon.style.left = posX + 'px';
   pigeon.style.top = posY + 'px';
