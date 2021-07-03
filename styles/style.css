@@ -94,3 +94,9 @@ body {
     border-top: solid 1px #ff6400;
     background-color: #ff6400;
 }
+
+.card-img-top {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
