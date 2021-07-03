@@ -1,5 +1,5 @@
-html {
-    cursor: url("../Img/rede.png")30 30,auto;
+.cursor {
+    cursor: url("../Img/rede.png")30 30, auto;
 }
 
 body {
@@ -8,12 +8,6 @@ body {
     background-repeat: repeat;
     background-size: 138px;
 }
-
-#homePage {
-
-}
-
-
 
 #scenario {
     position: absolute;
@@ -93,4 +87,10 @@ body {
     left: 0px;
     border-top: solid 1px #ff6400;
     background-color: #ff6400;
+}
+
+.card-img-top {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 250px;
 }
